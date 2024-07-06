@@ -5,8 +5,10 @@
 }
 
 body{
-    background-image: url("images/bg.jpeg");
-    background-size: 100%;
+    /* background-image: url("images/bg.jpeg"); */
+    /* background-size: cover; */
+    overflow: hidden;
+    height: 100vh;
 }
 
 .taskbar{
@@ -16,4 +18,24 @@ body{
     bottom: 0;
     display: flex;
     justify-content: center;
+    z-index: 110;
+}
+
+.startmenu{
+    position: absolute;
+    bottom: -655px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in;
+}
+
+.startmenu img{
+    border-radius: 10px;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+    margin: 6px 0;
+    height: 87%;
 }
